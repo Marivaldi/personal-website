@@ -1,0 +1,20 @@
+:host {
+  height: inherit;
+  width: inherit;
+}
+#home-container {
+  padding: 0;
+  font-size: 1.25em;
+}
+
+#social-links {
+  position: absolute;
+  font-size: 1.5em;
+  left:0;
+}
+
+#social-links li{
+  display: inline;
+  padding-left: 15px;
+  padding-right: 15px;
+}
