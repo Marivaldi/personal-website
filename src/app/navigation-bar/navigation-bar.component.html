@@ -1,6 +1,18 @@
 <nav class="sticky pusher">
-  <h1>Shayne Allen Moore</h1>
-  <a routerLink="/experiments" [class.selected]="currentURL == '/experiments'">Experiments</a>
-  <a routerLink="/projects" [class.selected]="currentURL == '/projects'">Projects</a>
-  <a routerLink="/" [class.selected]="currentURL == '/'">Home</a>
+  <section id="name-and-links">
+    <header><a routerLink="/">Shayne A. Moore</a></header>
+    <section id="social-links">
+      <ul>
+        <li><a href="https://github.com/Shayne-Moore"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/shayne-moore/"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+    </section>
+  </section>
+  <section id="navigation-links">
+    <ul>
+      <li [class.selected]="currentURL == '/'"><a routerLink="/" >Home</a></li>
+      <li [class.selected]="currentURL == '/experiments'"><a routerLink="/experiments"> Experiments</a></li>
+      <li [class.selected]="currentURL == '/projects'"><a routerLink="/projects" >Projects</a></li>
+    </ul>
+  </section>
 </nav>

@@ -1,49 +1,71 @@
 .selected {
-  border-bottom: 2px solid white;
+  border-bottom: 3px solid white;
 }
 
-nav {
-  overflow: hidden;
-  background-color: #0E1C36;
-  font-weight: lighter;
-  z-index: 1000;
+a {
+    text-decoration: none;
+    color: #f2f2f2;
 }
 
-nav h1{
-  margin: 0;
-  padding: 0px 0px 0px 10px;
-  float: left;
+#name-and-links{
+  position: relative;
+  float:left;
+  height:inherit;
+  width:auto;
+  padding-left: 15px;
+}
+
+#name-and-links header {
   display: block;
   color: #f2f2f2;
-  font-size: 19px;
-  line-height: 48px;
-  text-transform: uppercase;
+  font-size: 1.5em;
+  font-style: italic;
+  padding-top: 5px;
 }
 
+#social-links {
+  padding-right: 10px;
+}
 
-nav a {
-  line-height: 48px;
+#social-links li {
+  display: inline-block;
+  padding-top: 5px;
+  padding-right: 12px;
+  font-size: 1.2em;
+}
+
+#navigation-links {
+  line-height: 58px;
   float: right;
-  display: block;
-  color: #f2f2f2;
+}
+
+#navigation-links li {
+  display: inline-block;
+  line-height: 55px;
+  width: auto;
   text-align: center;
-  padding-top: 0px;
-  padding-bottom:0px;
-  padding-left: 14px;
-  padding-right:14px;
-  text-decoration: none;
+  padding: 0px 14px;
   font-size: 15px;
 }
 
-nav a:hover {
+#navigation-links a:hover {
   color: white;
 }
 
-nav a.active {
+#navigation-links a.active {
   background-color: #4CAF50;
   color: white;
 }
 
+nav {
+  position: relative;
+  overflow: hidden;
+  background-color: #30323D;
+  font-weight: lighter;
+  z-index: 1000;
+  border: 0px solid;
+  box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+}
 
 .sticky {
   position: fixed;
