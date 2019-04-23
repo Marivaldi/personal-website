@@ -1,29 +1,15 @@
 a {
   color:white;
 }
-.left {
-  position: relative;
-  height: 100vh;
-  width: 45%;
-  float: left;
-}
+
 mark{
   font-weight: bold;
   background-color: rgba(255,255,0, .49);
 }
+
 #about {
   position: relative;
-  background-image: url("/assets/img/stardust.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-
-.right {
-  height: 100%;
-  width: 55% ;
-  float: right;
+  height: 100vh;
 }
 
 .row {
@@ -45,6 +31,7 @@ mark{
 #about-context-section {
   position:relative;
   text-align: center;
+  height: 100vh;
 }
 
 #about-context-content{
@@ -62,6 +49,7 @@ mark{
 #down{
   display: none;
 }
+
 #about-content{
   position:absolute;
   top:50%;
@@ -76,6 +64,7 @@ mark{
   border: 0px solid;
   box-shadow: 0 0 9px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
 }
+
 #about-content b{
   font-size: 1.2em;
   font-weight: bolder;
@@ -124,7 +113,6 @@ mark{
     font-size: 1.5em;
     font-weight: bolder;
   }
-
   #about-content p{
     padding: 15px 0px;
     font-size: 1.2em;

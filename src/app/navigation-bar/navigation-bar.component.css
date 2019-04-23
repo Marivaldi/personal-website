@@ -34,13 +34,15 @@
   position:relative;
   top: 8px;
 }
-
-#navigation-links a:hover {
-  color: white;
+#navigation-links a {
+  color:black;
 }
 
-#navigation-links a.active {
-  background-color: #4CAF50;
+#navigation-links a:hover {
+  color: #4CAF50;
+}
+
+#navigation-links a:active{
   color: rgba(0,0,0,.54);
 }
 
