@@ -1,12 +1,12 @@
-<nav class="sticky pusher">
+<nav class="sticky top pusher">
   <section id="name-and-links">
     <header><a routerLink="/">Shayne A. Moore</a></header>
   </section>
   <section id="navigation-links">
     <ul>
       <li [class.selected]="currentURL == '/'"><a routerLink="/" >Home</a></li>
-      <!--<li [class.selected]="currentURL == '/experiments'"><a routerLink="/experiments"> Experiments</a></li>-->
       <li [class.selected]="currentURL == '/projects'"><a routerLink="/projects" >Projects</a></li>
+      <li [class.selected]="currentURL == '/experiments'"><a routerLink="/experiments"> Experiments</a></li>
     </ul>
   </section>
 </nav>

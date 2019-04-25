@@ -9,7 +9,9 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
+  scrollToAbout(event) {
+    window.scrollTo(0, document.body.scrollHeight);
+  }
 }

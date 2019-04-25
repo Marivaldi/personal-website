@@ -71,9 +71,17 @@ a {
 body {
   background-image: url("/assets/img/stardust.png");
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
+
+nav {
+  overflow: hidden;
+  background-color: #FFF;
+  font-weight: lighter;
+  z-index: 1000;
+  border: 0px solid;
+  box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+}
+
 .left {
   position: relative;
   width: 45%;
@@ -91,5 +99,27 @@ body {
 }
 
 .pushed {
-  padding-top: 55px;
+  top:55px;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+}
+
+.top {
+  top:0;
+}
+
+.bottom {
+  bottom: 0;
+  left: 0;
+}
+@media only screen and (max-width: 768px) {
+  .pushed {
+    padding-bottom:40px;
+  }
+  .pusher {
+    height:40px;
+  }
 }

@@ -1,5 +1,7 @@
 .selected {
-  border-bottom: 2px solid white;
+  color: blue;
+  text-transform: uppercase;
+  text-decoration: underline;
 }
 
 #name-and-links{
@@ -30,10 +32,6 @@
   font-size: 15px;
 }
 
-#navigation-links li a {
-  position:relative;
-  top: 8px;
-}
 #navigation-links a {
   color:black;
 }
@@ -42,26 +40,11 @@
   color: #4CAF50;
 }
 
-#navigation-links a:active{
-  color: rgba(0,0,0,.54);
-}
-
-nav {
-  position: relative;
-  overflow: hidden;
-  background-color: #FFF;
-  font-weight: lighter;
-  z-index: 1000;
-  border: 0px solid;
-  box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
+@media only screen and (max-width: 768px) {
+  #navigation-links {
+    display: none;
+  }
+  #name-and-links{
+    line-height: 40px;
+  }
 }

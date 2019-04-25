@@ -106,16 +106,26 @@ mark{
     font-size: 2em;
     display: block;
   }
-  #about-content {
-    margin-top: 70px;
-  }
+
   #about-content b{
     font-size: 1.5em;
     font-weight: bolder;
   }
+
+  #about-content{
+    position:relative;
+  }
+
+  #about-content-section{
+    padding-bottom: 55px;
+  }
+
   #about-content p{
     padding: 15px 0px;
     font-size: 1.2em;
     line-height: 1.5;
+  }
+  #about-context-content {
+    top:30%;
   }
 }

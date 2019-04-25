@@ -2,24 +2,23 @@ import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd} from '@angular/router';
 
 @Component({
-  selector: 'app-navigation-bar',
-  templateUrl: './navigation-bar.component.html',
-  styleUrls: ['./navigation-bar.component.css']
+  selector: 'app-bottom-bar',
+  templateUrl: './bottom-bar.component.html',
+  styleUrls: ['./bottom-bar.component.css']
 })
-export class NavigationBarComponent implements OnInit {
+export class BottomBarComponent implements OnInit {
 
   // Member variables
   currentURL : String;
 
-  // Constructor takes in the router to subscribe
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
   ngOnInit() {
     // This subscribes to route changes
     this.router.events.subscribe((val) => {
 
         // We only care about the where the navication is going
-        if (val instanceof NavigationEnd){
+        if (val instanceof NavigationEnd) {
 
           // Save the NavigationEnd object
           var navigationEnd = val;
@@ -28,7 +27,7 @@ export class NavigationBarComponent implements OnInit {
           this.currentURL = navigationEnd.urlAfterRedirects;
 
         }
-
     });
   }
+
 }

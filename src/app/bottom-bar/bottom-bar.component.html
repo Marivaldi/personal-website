@@ -1,0 +1,22 @@
+<nav class="sticky bottom pusher">
+  <ul>
+    <li>
+      <a [class.selected]="currentURL == '/'" routerLink="/" >
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+    </li>
+    <li>
+      <a [class.selected]="currentURL == '/projects'" routerLink="/projects">
+        <i class="fas fa-project-diagram"></i>
+        <span>Projects</span>
+      </a>
+    </li>
+    <li>
+      <a [class.selected]="currentURL == '/experiments'" routerLink="/experiments">
+        <i class="fas fa-flask"></i>
+        <span>Experiments</span>
+      </a>
+    </li>
+  </ul>
+</nav>
